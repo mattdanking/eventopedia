@@ -14,5 +14,24 @@
  *= require_self
  */
 
-html, body { height: 100%; margin: 0; padding: 0; }
-#map { height: 100%; }
+html, body { 
+  text-align: center;
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+
+table {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Sawasdee, FreeMono, Helvetica;
+  font-size: 44px;
+  margin: 1.5em auto;
+}
+
+#map { 
+  height: 40%;
+  margin: 4em auto;
+}

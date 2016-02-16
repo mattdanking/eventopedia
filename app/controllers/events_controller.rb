@@ -13,6 +13,8 @@ class EventsController < ApplicationController
     @address = Event.find(params[:id]).address
     @latitude = Event.find(params[:id]).latitude
     @longitude = Event.find(params[:id]).longitude
+    gon.key1 = @latitude
+    gon.key2 = @longitude
   end
 
   # GET /events/new
