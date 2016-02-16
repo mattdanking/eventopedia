@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
 gem 'geocoder', '~> 1.3'
-
+gem 'underscore-rails'
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
