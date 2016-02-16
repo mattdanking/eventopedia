@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
  root 'splash#index'
-  
+
  resources :events do
   resources :galleries
   resources :questions

@@ -35,3 +35,21 @@ h1 {
   height: 40%;
   margin: 4em auto;
 }
+
+#splashbackground {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("http://hairymanfestival.com/wp-content/uploads/2015/04/buiten-westen-amsterdam-20131.jpg");
+  }
+
+  #splashbackground h1 {
+    font-size: 44px;
+    margin: 3.2em auto;
+  }
+
+    #splashbackground h2 {
+      font-family: Courier;
+    font-size: 34px;
+    margin: 1.5em auto;
+  }
