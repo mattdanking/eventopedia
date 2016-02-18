@@ -5,11 +5,15 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
+    # @event_question = Question.where(event_id: params[:id])
+    @event = Event.find(params[:event_id])
   end
 
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @answers = @question.answers
+    @event = @question.event
   end
 
   # GET /questions/new
@@ -25,6 +29,7 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(question_params)
+    @question.event_id = params[:event_id] ## event_id
 
     respond_to do |format|
       if @question.save
@@ -71,4 +76,8 @@ class QuestionsController < ApplicationController
     def question_params
       params.require(:question).permit(:questions, :event_id)
     end
+
+    # def event_id
+    #   params.require(:event_id)
+    # end
 end

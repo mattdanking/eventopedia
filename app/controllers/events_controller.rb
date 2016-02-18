@@ -1,6 +1,5 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-
   # GET /events
   # GET /events.json
   def index
@@ -10,9 +9,9 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    @address = Event.find(params[:id]).address
-    @latitude = Event.find(params[:id]).latitude
-    @longitude = Event.find(params[:id]).longitude
+    @address = @event.address
+    @latitude = @event.latitude
+    @longitude = @event.longitude
     gon.key1 = @latitude
     gon.key2 = @longitude
   end
